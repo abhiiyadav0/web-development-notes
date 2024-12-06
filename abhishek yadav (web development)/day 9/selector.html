@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section{
+            height: 100vh;
+            display: flex;
+           flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+            background-color: brown;
+
+        }
+        .button{
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+         <h1 id="idselector"> Hello, world</h1>
+    <button onclick="idselector()">use ID</button>
+    <button onclick="classselector()">use class</button>
+    </div>
+    <script>
+        const idselector = () => {
+            document.getElementByID("idselector").innerHTML="This is abhishek and I am using ID selector"
+
+        }
+        const classSelector = () => {
+            document.getElementByclassName("classSelectorr").innerHTML="This id abhishek and I am using  class Selector"
+            
+        }
+    </script>
+   
+</body>
+</html>

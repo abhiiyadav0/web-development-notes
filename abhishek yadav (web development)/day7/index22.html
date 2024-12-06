@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    
+    <h2 id="name">hello</h2>
+    <div id="box"></div>
+    <script>
+        // console.log("This is from fronted")
+        // for(let i=0;i<10;i++){
+        //     console.log(i);
+        //     console.log("This is Abhishek yadav");
+        // }
+        // let i=0;
+        // while(i<11){
+        //     console.log('This is while loop running ${i} time')
+        //     i++
+        // }
+        // let j=0;
+        //  do {
+        //     console.log(`This is while loop running ${j} time`)
+        //     j++;
+        // } while(j<11);
+        const changename=()=>{
+            document.getElementById("name").style.color="yellow";
+        }
+            const changebox=()=>{
+                document.getElementById("box").style.backgroundColor="yellow";
+                document.getElementById("box").style.borderRadius="50%";
+        }
+        setTimeout(() => {
+            changename()
+            changebox()
+        }, 1000);
+        
+        const fruits = ["apple","mango","pine","grapes","banana","orange"]
+console.log(fruits[3]);
+//push
+fruits.push("orange")
+//pop
+fruits.pop()
+fruits.pop()
+fruits.pop()
+for(let x in fruits){
+    console.log(`I like to eat ${fruits[x]}`)
+}
+const ages=[77,37,93,23,53,61,9,14,99,11,25,73,24]
+console.log(ages.sort())
+console.log(ages.sort((a,b)=>a-b))
+console.log(ages.sort((a,b)=>b-a))
+
+ages.map((x)=>{
+    console.log(`I am ${x} year old using for each😊😉`)
+})
+const adults log(.....data: any []): void
+//object
+
+    
+    </script>
+</body>
+</html>
